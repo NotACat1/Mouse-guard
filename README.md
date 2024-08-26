@@ -1,5 +1,9 @@
 # Mouse Guard
 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+
 Этот проект представляет собой многофункционального Discord бота, написанного на TypeScript с использованием библиотеки `discord.js`. Бот включает различные команды для управления голосовыми каналами, администрирования пользователей, а также предоставляет базовые команды для взаимодействия с пользователями.
 
 ## Содержание
