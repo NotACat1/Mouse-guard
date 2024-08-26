@@ -1,0 +1,59 @@
+{
+  "name": "mouse-guard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.ts",
+  "homepage": "https://notacat1.github.io/Mouse-guard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotACat1/Mouse-guard"
+  },
+  "keywords": [
+    "TypeScript",
+    "Prettier",
+    "Husky",
+    "Commitlint",
+    "Discord",
+    "Discord Bot",
+    "Eslint",
+    "Winston"
+  ],
+  "author": "NotACat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NotACat1/Mouse-guard/issues"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "build": "tsc && tsc-alias",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{js,ts,json}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "tsc-alias": "^1.8.10"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "tsconfig-paths": "^4.2.0",
+    "winston": "^3.14.2"
+  }
+}
